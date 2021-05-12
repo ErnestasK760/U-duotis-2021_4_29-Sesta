@@ -7,6 +7,11 @@ fetch("https://api.unsplash.com/photos/random?client_id=ypwAoVfL6vYqtraKuUSYtWDO
     console.log(data);
     for(var i = 0; i < data.length; i++) {
         console.log(data[i].urls.regular);
+        if(data[i].alt_description){
+            data[i].alt_description
+        }else{
+            data[i].alt_description = "there is no description"
+        }
         $(".row").append(`
         <div class="col-md-6 grid-item">
             <div class="card mb-3">
