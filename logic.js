@@ -8,7 +8,7 @@ loadImages(pages);
 
 
 function loadImages( page ){
-fetch("https://api.unsplash.com/photos?client_id=&page="+ page)
+fetch("https://api.unsplash.com/photos?client_id=ypwAoVfL6vYqtraKuUSYtWDO4LF732P9XlmNyI4bPAw&page="+ page)
 .then(res => res.json())
 .then(data => {
     for(var i = 0; i < data.length; i++) {
